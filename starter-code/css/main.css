@@ -1,8 +1,13 @@
 /*
 Colors to use:
-dark blue: #06365f
-light blue: #1c5380
+dark blue:
+light blue:
 */
+*::before,
+*::after {
+
+  box-sizing: border-box;
+}
 
 body {
   display: block;
@@ -35,7 +40,7 @@ blurb {
   display:block;
   float:right;
   max-width: 45%;
-  margin-right: 100px
+  margin-right: 100px;
   margin-left: -100px;
   margin-top: 25px;
 }
@@ -50,5 +55,36 @@ blurb {
   margin: 20px 0;
   padding: 25px 0 0 25px;
   font-size: 1.8em;
+  color: #06365f;
   font-weight: 800;
+}
+
+blurb p {
+  padding: 20px;
+  line-height: 30px;
+}
+
+.downloads{
+  margin-left: 20px;
+}
+
+.footer {
+  clear:both;
+  font-size: 12px;
+  padding: 10px;
+  margin: 30px 20px 0 0px;
+}
+
+.footer > ul {
+  display: flex;
+  justify-content: center;
+  padding-right: 80px;
+  list-style: none;
+}
+
+.footer > * {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  color: #1c5380;
 }
